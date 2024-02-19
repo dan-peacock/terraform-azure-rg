@@ -3,7 +3,7 @@ provider "azurerm" {
   client_id_file_path     = var.tfc_vault_backed_azure_dynamic_credentials.default.client_id_file_path
   client_secret_file_path = var.tfc_vault_backed_azure_dynamic_credentials.default.client_secret_file_path
   subscription_id         = var.subscriptionID
-  tenant_id               = var.clientID
+  tenant_id               = var.TenantID
 }
 
 
