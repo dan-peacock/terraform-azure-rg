@@ -1,7 +1,17 @@
 
 provider "azurerm" {
   features{}
+
 }
+
+provider "azurerm" {
+  features {}
+  client_id_file_path     = var.tfc_vault_backed_azure_dynamic_credentials.default.client_id_file_path
+  client_secret_file_path = var.tfc_vault_backed_azure_dynamic_credentials.default.client_secret_file_path
+  subscription_id         = var.subscriptionID
+  tenant_id               = var.clientID
+}
+
 
 # Resource Group
 resource "azurerm_resource_group" "example" {
