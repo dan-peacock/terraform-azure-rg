@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "example" {
 
 # Storage Account
 resource "azurerm_storage_account" "example" {
-  name                     = "danpvcsstorage"
+  name                     = "danpeacockvcsstorage"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
   account_tier             = "Standard"
