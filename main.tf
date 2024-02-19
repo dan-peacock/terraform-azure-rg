@@ -1,9 +1,3 @@
-
-provider "azurerm" {
-  features{}
-
-}
-
 provider "azurerm" {
   features {}
   client_id_file_path     = var.tfc_vault_backed_azure_dynamic_credentials.default.client_id_file_path
