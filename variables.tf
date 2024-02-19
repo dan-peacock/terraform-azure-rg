@@ -1,1 +1,6 @@
+variable subscriptionID {
+}
 
+variable TenantID {
+
+}
